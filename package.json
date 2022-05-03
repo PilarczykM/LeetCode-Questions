@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --fix --ext .ts",
-    "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,ts}\" "
+    "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,ts}\" ",
+    "test": "vitest"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.22.0",
