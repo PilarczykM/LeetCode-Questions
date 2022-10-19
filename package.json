@@ -3,26 +3,24 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
+    "preinstall": "npx only-allow pnpm",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --fix --ext .ts",
-    "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,ts}\" ",
+    "lint:format": "prettier --loglevel warn --write \"./**/*.{js,ts}\" ",
     "test": "vitest"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.22.0",
-    "@typescript-eslint/parser": "^5.22.0",
-    "eslint": "^8.14.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "eslint": "^8.25.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-no-loops": "^0.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.6.2",
-    "typescript": "^4.6.4",
-    "vite": "^2.9.7",
-    "vitest": "^0.10.2"
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.8",
+    "vitest": "^0.24.3"
   }
 }

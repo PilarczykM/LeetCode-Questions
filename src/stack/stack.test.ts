@@ -30,5 +30,6 @@ describe('My Stack', () => {
     expect(item).toBe(popValue);
     expect(stack.size()).toBe(0);
     expect(stack.pop()).toBe(undefined);
+    expect(stack.size()).toBe(0);
   });
 });
