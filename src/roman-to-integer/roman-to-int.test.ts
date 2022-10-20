@@ -24,6 +24,7 @@ describe('Roman to Integer', () => {
     { input: 'MDLXIII', output: 1563 },
     { input: 'IV', output: 4 },
     { input: 'XXIX', output: 29 },
+    { input: 'MCMXCIV', output: 1994 },
   ])('romanToInt(input) -> output.', ({ input, output }) => {
     expect(romanToInt(input)).toBe(output);
   });

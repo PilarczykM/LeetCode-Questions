@@ -16,7 +16,7 @@ export function romanToInt(s: string): number {
     const roman_num2 = roman.get(s.charAt(i - 1));
     if (i == 0 && roman_num1) result += roman_num1;
     else if (roman_num1 && roman_num2 && roman_num1 > roman_num2) {
-      result += (roman_num1 - 2) * roman_num2;
+      result += roman_num1 - 2 * roman_num2;
     } else if (roman_num1) {
       result += roman_num1;
     }
