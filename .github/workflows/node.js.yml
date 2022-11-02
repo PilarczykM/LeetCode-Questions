@@ -28,6 +28,6 @@ jobs:
           cache: 'npm'
           cache-dependency-path: "./pnpm-lock.yaml"
       - name: Install
-        run: npm install
+        run: pnpm install
       - name: Run tests
-        run: npm run coverage
+        run: pnpm run coverage
