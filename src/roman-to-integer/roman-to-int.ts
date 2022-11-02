@@ -12,13 +12,13 @@ export function romanToInt(s: string): number {
   ]);
 
   for (let i = 0; i < s.length; i++) {
-    const roman_num1 = roman.get(s.charAt(i));
-    const roman_num2 = roman.get(s.charAt(i - 1));
-    if (i == 0 && roman_num1) result += roman_num1;
-    else if (roman_num1 && roman_num2 && roman_num1 > roman_num2) {
-      result += roman_num1 - 2 * roman_num2;
-    } else if (roman_num1) {
-      result += roman_num1;
+    const romanNum1 = roman.get(s.charAt(i));
+    const romanNum2 = roman.get(s.charAt(i - 1));
+    if (i == 0 && romanNum1) result += romanNum1;
+    else if (romanNum1 && romanNum2 && romanNum1 > romanNum2) {
+      result += romanNum1 - 2 * romanNum2;
+    } else if (romanNum1) {
+      result += romanNum1;
     }
   }
 
