@@ -4,3 +4,4 @@
 
 ### Todo:
 - Add eslint formatting check for github action
+- Fail PR if test or linting does not pass
