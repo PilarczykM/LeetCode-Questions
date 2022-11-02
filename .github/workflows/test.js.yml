@@ -31,7 +31,5 @@ jobs:
         cache: 'pnpm'
     - name: Install dependencies
       run: pnpm install
-    - name: pnpm version
-      run: pnpm -v
     - name: Run tests
       run: pnpm run test
